@@ -1,0 +1,9 @@
+<div class="wrapper" ng-app="user" ng-controller="userCtrl" id="userWrapper">
+    <ul class="nav nav-tabs">
+        <li role="presentation" ng-repeat="item in huadian track by $index">
+            <a ui-sref="app.user.detail({'name':item.name})">{{item.name}}</a></li>
+    </ul>
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" ui-view></div>
+    </div>
+</div>

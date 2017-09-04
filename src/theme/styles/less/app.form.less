@@ -1,0 +1,57 @@
+.sf-form .form-group {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 5px;
+
+  .control-label {
+    text-align: right;
+    height: @normal-md-height;
+    line-height: @normal-md-height;
+  }
+
+  div .form-control{
+    height: @normal-md-height;
+    line-height: @normal-md-height;
+  }
+
+  select {
+    width: 100%;
+    height: @normal-md-height;
+    line-height: @normal-md-height;
+  }
+
+  .tip,.error {
+    text-align: left;
+    height: @normal-md-height;
+    line-height: @normal-md-height;
+    color: #f05050;
+  }
+}
+
+.query-group {
+  padding: 5px;
+
+  .control-label {
+    text-align: right;
+    height: @normal-md-height;
+    line-height: @normal-md-height;
+  }
+
+  .form-control{
+    width: 70%;
+    height: @normal-md-height;
+    line-height: @normal-md-height;
+  }
+}
+
+//reset ui-select
+.ui-select-container > div{
+  overflow: auto;
+  max-height: 70px;
+}
+
+.no-message {
+  color: @brand-danger;
+  font-size: @font-size-sm;
+  padding: 5px 0;
+}

@@ -1,0 +1,81 @@
+<!-- auto nav -->
+<ul class="nav" ng-repeat="nav in navs track by $index">
+
+    <li ng-if="nav.children.length == 0" ui-sref-active="active">
+        <a ng-href="{{nav.href}}">
+            <i class="{{nav.outIcon}} text-primary"></i>
+            <span class="font-bold">{{nav.name}}</span>
+        </a>
+    </li>
+
+    <li ng-if="nav.children.length > 0">
+        <a href class="auto">
+            <span class="pull-right text-muted">
+                <i class="fa fa-fw fa-angle-right text"></i>
+                <i class="fa fa-fw fa-angle-down text-active"></i>
+            </span>
+            <i class="{{nav.outIcon}} text-primary"></i>
+            <span class="font-bold">{{nav.name}}</span>
+        </a>
+        <ul class="nav nav-sub dk" ng-repeat="subNav in nav.children track by $index">
+            <li ui-sref-active="active">
+                <a ng-href="{{subNav.href}}">
+                    <i class="{{subNav.outIcon}}"></i>
+                    <span class="font-bold">{{subNav.name}}</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<!-- temp nav -->
+<ul class="nav">
+    <li ui-sref-active="active">
+        <a ui-sref="app.home">
+            <i class="fa fa-book"></i>
+            <span class="font-md">Home</span>
+        </a>
+    </li>
+    <li ng-class="{active:$state.includes('app.user')}">
+        <a href class="auto">
+            <span class="pull-right text-muted">
+                <i class="fa fa-fw fa-angle-right text"></i>
+                <i class="fa fa-fw fa-angle-down text-active"></i>
+            </span>
+            <i class="fa fa-gear text-primary"></i><span class="font-md">User</span>
+        </a>
+        <ul class="nav nav-sub dk">
+            <li class="nav-sub-header">
+                <a href>
+                    <span class="font-md">User</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.user">
+                    <i class="fa fa-asterisk"></i><span>User</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+	<li ng-class="{active:$state.includes('app.alarm')}">
+        <a href class="auto">
+            <span class="pull-right text-muted">
+                <i class="fa fa-fw fa-angle-right text"></i>
+                <i class="fa fa-fw fa-angle-down text-active"></i>
+            </span>
+            <i class="fa fa-bell text-primary"></i><span class="font-md">Alarm</span>
+        </a>
+        <ul class="nav nav-sub dk">
+            <li class="nav-sub-header">
+                <a href>
+                    <span class="font-md">Alarm</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.alarm">
+                    <i class="fa fa-asterisk"></i><span>Rule</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>

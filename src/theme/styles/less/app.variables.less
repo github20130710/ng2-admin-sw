@@ -1,0 +1,111 @@
+/* 
+
+*/
+@brand-aside:           #4399c9;
+//@brand-primary:         #8bc400;
+//@brand-info:            #23b7e5;
+//@brand-success:         #27c24c;
+//@brand-warning:         #fad733;
+//@brand-danger:          #f05050;
+@brand-primary:         #2baed8;
+@brand-info:            #23b7e5;
+@brand-success:         #43c9a4;
+@brand-attention:       #ffd400;
+@brand-serious:         #ff6464;
+@brand-warning:         #efb116;
+@brand-danger:          #b74949;
+@brand-light:           #edf1f2;
+@brand-dark:            #3a3f51;
+@brand-black:           #7c7c7c;
+@brand-base:            #4399c9; //基色调:蓝色
+
+@body-bg:               lighten(@brand-light, 1%);
+@text-color:            #58666e;
+@text-muted:            lighten(@text-color, 25%);
+
+@font-family-sans-serif:  "微软雅黑", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-base:        @font-family-sans-serif;
+
+@font-size-base:          12pt;
+@font-size-lg:            ceil(@font-size-base * 1.16); // ~14pt
+@font-size-md:            ceil(@font-size-base * 1.08); // ~13pt
+@font-size-sm:            ceil(@font-size-base * 0.91); // ~11pt
+@font-size-xs:            ceil(@font-size-base * 0.83); // ~10pt
+
+@link-color:              darken(@text-color, 15%);
+@link-hover-color:        darken(@text-color, 30%);
+
+@border-radius-base:      0.25em;
+@border-radius-lg:        6px;
+@border-color:		  	  darken(@brand-light, 5%);
+
+@line-height-base:        1.42857143; // 20/14
+@line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
+@icon-css-prefix:         i;
+
+// Buttons
+// -------------------------
+
+@btn-default-color:              @text-color;
+@btn-default-bg:                 lighten(@brand-light, 5%);
+@btn-default-border:             @border-color;
+@btn-border-radius:              @border-radius-base;
+
+@input-border:                   darken(@border-color, 5%);
+@input-border-focus:             @brand-info;
+@input-border-radius:            @border-radius-base;
+
+@panel-bg:                    	 #fff;
+@panel-border:                	 @border-color;
+@panel-heading-border:           lighten(@border-color, 5%);
+@panel-list-group-border:        lighten(@border-color, 5%);
+@panel-border-radius:         	 @border-radius-base;
+@panel-heading-bg:            	 lighten(@brand-light, 3%);
+@panel-footer-bg:             	 #fff;
+
+@nav-bg:                         lighten(@brand-light, 3%);
+@nav-border-color:               #098dcd;
+@badge-bg:                       darken(@brand-light, 40%);
+
+@list-group-item-border:         lighten(@border-color, 3%);
+@list-group-item-hover:          lighten(@brand-light, 3%);
+@list-group-item-focus:          darken(@brand-light, 3%);
+@list-group-select-color:        #dbeef9;
+@list-group-active-color:        @brand-info;
+
+@table-border-color:             lighten(@border-color, 4%);
+@table-striped-color:            lighten(@brand-light, 4.5%);;
+
+@arrow-width:         			     8px;
+@arrow-color:         			     #fff;
+@arrow-outer-width:   			     (@arrow-width + 1);
+@arrow-outer-color:   			     rgba(0,0,0,.1);
+
+@switch-width:                   35px;
+@switch-height:                  20px;
+@switch-md-width:                40px;
+@switch-md-height:               24px;
+@switch-lg-width:                50px;
+@switch-lg-height:               30px;
+
+@app-aside-width:                180px;
+@app-aside-lg-width:             180px;
+@app-aside-nav-height:           36px;
+@app-aside-folded-width:         60px;
+@app-aside-folded-nav-height:    50px;
+@app-aside-dock-media:           992px;
+
+@app-header-height:              55px;
+@app-header-md-height:			 90px;
+
+@scroll-bar-width:               17px;
+@butterbar-height:               3px;
+@butterbar-time:                 0.75s;
+
+@off-screen-width:               75%;
+
+@normal-xs-height:               10px;
+@normal-height:                  20px;
+@normal-md-height:               30px;
+@normal-lg-height:               40px;
